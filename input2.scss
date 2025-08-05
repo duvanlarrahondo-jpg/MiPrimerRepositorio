@@ -1,0 +1,6 @@
+@use 'input';
+
+.inverse {
+  background-color: input.$primary-color;
+  color: white;
+} //bootstrap headers pagina con ejemplos para paginas

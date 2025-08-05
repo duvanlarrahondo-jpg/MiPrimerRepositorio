@@ -1,0 +1,127 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #0a74da;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+/* Estilos para el título principal */
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+/* Lista de navegación sin viñetas y centrada */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+/* Elementos de la lista en línea */
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+/* Enlaces de navegación */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+/* Efecto hover en los enlaces de navegación */
+nav ul li a:hover {
+    background-color: #0a74da;
+    transition: background-color 0.3s;
+}
+
+/* Sección principal con disposición flex */
+section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+/* Estilos de los artículos */  
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 48%;
+}
+/* Color del título en los artículos */
+article h2 {
+    color: #0a74da;
+}
+/* Color y tamaño del texto en los artículos */
+article p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Estilos de la barra lateral */
+aside {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+/* Color del título en la barra lateral */
+aside h3 {
+    color: #0a74da;
+}
+/* Estilos del texto en la barra lateral */
+aside p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+/* Enlaces de redes sociales en el footer */
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+/* Efecto hover en los enlaces del footer */
+footer .social-links a:hover {
+    background-color: #0a74da;
+    transition: background-color 0.3s;
+}
+/* Estilos del texto en el footer */
+footer p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #ddd;
+}

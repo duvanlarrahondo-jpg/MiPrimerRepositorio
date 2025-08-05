@@ -1,0 +1,161 @@
+/* Establece un margen y relleno en 0 para todos los 
+elementos y usa box-sizing para evitar que el padding afecte el tamaño */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Establece los estilos globales del cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Estilos de navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Estilos de los productos */
+.productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.producto {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    margin: 15px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.producto p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.producto .imagen-producto {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.producto .imagen-principal,
+.producto .imagen-secundaria {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.producto .imagen-secundaria {
+    opacity: 0;
+}
+
+.producto:hover .imagen-principal {
+    opacity: 0;
+}
+
+.producto:hover .imagen-secundaria {
+    opacity: 1;
+}
+
+/* Descripción de los productos */
+.descripcion {
+    padding: 30px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.descripcion h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.descripcion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.descripcion ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Estilos de enlaces */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #ff6600;
+}

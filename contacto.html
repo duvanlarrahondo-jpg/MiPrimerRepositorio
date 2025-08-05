@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="stylec.css">
+</head>
+<body>
+
+     
+    <div class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="equipo.html">Equipo</a>
+        <a href="contacto.html">Contactos</a>
+        <a href="https://www.mercadolibre.com.co/">Tienda virtual</a>
+    </div>
+
+     
+    <div class="container">
+        <h2>Pongámonos en contacto</h2>
+        <form action="" method="post">
+            <label>Tipo de tratamiento</label>
+            <input list="tratamiento" name="tratamiento">
+            <datalist id="tratamiento">
+                <option value="Señor"></option>
+                <option value="Joven"></option>
+                <option value="Señora"></option>
+                <option value="Señorita"></option>
+            </datalist>
+
+            <label>Ingrese su nombre:</label>
+            <input type="text" name="NombreUsuario">
+
+            <label>Número de teléfono:</label>
+            <input type="number" name="Telefono">
+
+            <label>Correo Electrónico:</label>
+            <input type="email" name="Correo">
+
+            <label>Por favor indique el tipo de producto a cotizar</label>  
+            <input type="checkbox" name="Movil"> Smartphone <br>
+            <input type="checkbox" name="web"> Tablet <br>
+            <input type="checkbox" name="Standalone"> Auriculares inalambricos <br>
+
+            <label>Método de pago preferido:</label>
+            <input type="radio" name="Metodo" value="Efectivo"> Efectivo <br>
+            <input type="radio" name="Metodo" value="Tarjeta"> Tarjeta de crédito <br>
+            <input type="radio" name="Metodo" value="Nequi"> Nequi <br>
+
+            <label>Déjanos tus requerimientos</label>
+            <textarea name="mensaje" cols="30" rows="5"></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+</body>
+</html>
